@@ -7,7 +7,7 @@ a few key requirements.
 2. Show at least 1 dataset in table form. React-table is a favorite of our but any React component in table form is fine. <br />
 3. Create some form of multi page appearance through a navbar or sidebar to separate the 3 sets of figures. <br />
 
-Outside of these requirements you have free reign to let your creativity shine. Display the data in any way that makes sense, format the pages however you see fit. Keep in mind that we regularly build Web Apps for business partners so use that to guide our choices.
+Outside of these requirements you have free reign to let your creativity shine. Display the data in any way that makes sense, format the pages however you see fit. Keep in mind that we regularly build Web Apps for business partners so use that to guide our choices. Also note that these datasets are NOT connected to don't try to build connections between the three. If you have any technical difficulties with the testing app feel free to reach out through email. 
 
 
 # Lowes Stores Data
