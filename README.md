@@ -3,9 +3,9 @@
 This app contains 3 datasets set up to be returned on 3 separate API calls to the express.js server. Below is a basic description of each dataset along with the API call necessary to receive the data. You have 48 hours to use these datasets to show of your UI skills with
 a few key requirements.
 
-1. Use Google Maps API, Mapbox GL, or any other map API to display all of the Lowe's stores as markers.
-2. Show at least 1 dataset in table form. React-table is a favorite of our but any React component in table form is fine.
-3. Create some form of multi page appearance through a navbar or sidebar to separate the 3 sets of figures
+1. Use Google Maps API, Mapbox GL, or any other map API to display all of the Lowe's stores as markers.\n
+2. Show at least 1 dataset in table form. React-table is a favorite of our but any React component in table form is fine.\n
+3. Create some form of multi page appearance through a navbar or sidebar to separate the 3 sets of figures\n
 
 Outside of these requirements you have free reign to let your creativity shine. Display the data in any way that makes sense, format the pages however you see fit. Keep in mind that we regularly build Web Apps for business partners so use that to guide our choices.
 
