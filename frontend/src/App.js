@@ -1,14 +1,38 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
-import ExampleComponent1 from './routes/ExampleComponent1.js';
-
+import MapContainer from './routes/Map.js';
+import TableContainer from './routes/Table.js';
+import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
+import Navbar from './components/Navbar';
+import {setStores} from "./actions/actions";
+import {useDispatch} from "react-redux";
 
 function App() {
-  return (
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        fetch('http://localhost:12059/react-interview/getLowesStores')
+            .then(response => response.json())
+            .then(data => {
+                dispatch(setStores(data));
+            });
+    });
+
+    return (
     <div className="App">
-      <ExampleComponent1 />
+        <Router>
+            <Navbar />
+            <Switch>
+                <Route path="/map/:lat/:lng" component={MapContainer}/>
+                <Route path="/map" component={MapContainer}/>
+                <Route path="/table">
+                    <TableContainer />
+                </Route>
+                <Redirect from='/' to='/map' />
+            </Switch>
+        </Router>
     </div>
-  );
+    );
 }
 
 export default App;

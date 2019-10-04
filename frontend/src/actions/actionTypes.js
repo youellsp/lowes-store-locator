@@ -1,0 +1,3 @@
+export const SET_LOCATIONS = "SET_LOCATIONS";
+export const SET_FILTER = "SET_FILTER";
+export const SET_SELECTED_STORE = "SET_SELECTED_STORE";
